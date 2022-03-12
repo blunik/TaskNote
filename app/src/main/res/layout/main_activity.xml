@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ru.com.tasknote.presentation.customView.CustomBottomNavigationView
+        android:id="@+id/bottom_navigation"
+        style="@style/BottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_bottom_view"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="-10dp"
+        android:background="@android:color/transparent"
+        android:paddingTop="@dimen/padding_bottom_view"
+        app:itemIconSize="@dimen/margin_bottom_view"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/navigation">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:contentDescription="@string/title_help"
+            app:backgroundTint="@color/melon"
+            app:fabSize="mini"
+            app:rippleColor="@color/white"
+            app:srcCompat="@drawable/ic_heart"
+            app:tint="@color/white" />
+
+    </ru.com.tasknote.presentation.customView.CustomBottomNavigationView>
+
+</RelativeLayout>

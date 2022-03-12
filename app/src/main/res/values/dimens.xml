@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_loading">16sp</dimen>
+    <dimen name="text_size_profile">21sp</dimen>
+    <dimen name="text_size_title">26sp</dimen>
+    <dimen name="padding_button_out">16dp</dimen>
+    <dimen name="text_size_button">20sp</dimen>
+    <dimen name="text_size_name">25sp</dimen>
+    <dimen name="text_size_form_value">16sp</dimen>
+    <dimen name="size_progress_bar">60dp</dimen>
+    <dimen name="size_logo_app">80dp</dimen>
+    <dimen name="size_logo_company">20dp</dimen>
+    <dimen name="padding_button_out_top">10dp</dimen>
+    <dimen name="margin_bottom_loading">15dp</dimen>
+    <dimen name="size_icon_edit">25dp</dimen>
+    <dimen name="margin_name_person">15dp</dimen>
+    <dimen name="view_margin">10dp</dimen>
+    <dimen name="margin_form">20dp</dimen>
+    <dimen name="margin_push">20dp</dimen>
+    <dimen name="height_bottom_view">90dp</dimen>
+    <dimen name="padding_bottom_view">10dp</dimen>
+    <dimen name="margin_bottom_view">24dp</dimen>
+</resources>
