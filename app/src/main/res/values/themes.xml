@@ -1,9 +1,10 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.TaskNote" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.TaskNote" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorPrimary">@color/teal_200</item>
+        <item name="colorAccent">@color/turtle_green</item>
+        <item name="colorPrimaryVariant">@color/teal_200</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
@@ -11,26 +12,32 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+        <item name="bottomNavigationStyle">@style/BottomNavigationViewStyle</item>
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="SplashScreen" parent="Theme.TaskNote">
-        <item name="android:background">@color/pale_grey</item>
+    <style name="BottomNavigationViewStyle" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="android:background">@drawable/my_background_bottom_drawer</item>
+        <item name="itemTextColor">@drawable/bottom_nav_item_color</item>
+        <item name="itemIconTint">@drawable/bottom_nav_item_color</item>
     </style>
+
 
     <style name="TextFormTitle" parent="Widget.AppCompat.TextView">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:fontFamily">@font/CimeroPro</item>
+        <item name="android:fontFamily">@font/cimeropro</item>
         <item name="android:textStyle">normal</item>
         <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:textColor">@color/grey</item>
         <item name="android:textSize">@dimen/text_size_title</item>
     </style>
 
     <style name="TextFormValue" parent="Widget.AppCompat.TextView">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:fontFamily">@font/AsakuraSlab</item>
+        <item name="android:fontFamily">@font/asakuraslab</item>
         <item name="android:textStyle">normal</item>
         <item name="android:textColor">@color/black_87</item>
         <item name="android:lineSpacingExtra">6sp</item>
@@ -40,26 +47,12 @@
     <style name="Line">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">1dp</item>
-        <item name="android:background">@color/cool_grey</item>
+        <item name="android:background">@color/cool_blue</item>
     </style>
 
-    <style name="BottomNavigationView">
-        <item name="itemTextAppearanceActive">@style/TextAppearance.BottomNavigationView.Active
-        </item>
-        <item name="itemTextAppearanceInactive">
-            @style/TextAppearance.BottomNavigationView.Inactive
-        </item>
-    </style>
 
     <style name="TextAppearance" />
 
     <style name="TextAppearance.BottomNavigationView" />
 
-    <style name="TextAppearance.BottomNavigationView.Inactive">
-        <item name="android:textSize">12sp</item>
-    </style>
-
-    <style name="TextAppearance.BottomNavigationView.Active">
-        <item name="android:textSize">12sp</item>
-    </style>
 </resources>

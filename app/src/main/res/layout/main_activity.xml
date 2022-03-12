@@ -9,32 +9,31 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <ru.com.tasknote.presentation.customView.CustomBottomNavigationView
-        android:id="@+id/bottom_navigation"
-        style="@style/BottomNavigationView"
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/height_bottom_view"
+        android:layout_height="56dp"
         android:layout_alignParentBottom="true"
-        android:layout_gravity="bottom"
-        android:layout_marginBottom="-10dp"
-        android:background="@android:color/transparent"
-        android:paddingTop="@dimen/padding_bottom_view"
-        app:itemIconSize="@dimen/margin_bottom_view"
-        app:labelVisibilityMode="labeled"
-        app:menu="@menu/navigation">
+        android:theme="@style/Theme.TaskNote"
+        app:elevation="0dp">
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="top|center_horizontal"
-            android:contentDescription="@string/title_help"
-            app:backgroundTint="@color/melon"
-            app:fabSize="mini"
-            app:rippleColor="@color/white"
-            app:srcCompat="@drawable/ic_heart"
-            app:tint="@color/white" />
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            style="@style/BottomNavigationViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/navigation" />
+    </com.google.android.material.appbar.AppBarLayout>
 
-    </ru.com.tasknote.presentation.customView.CustomBottomNavigationView>
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/fab"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="top|center_horizontal"-->
+<!--        app:fabSize="mini"-->
+<!--        app:rippleColor="@color/white"-->
+<!--        app:srcCompat="@drawable/ic_baseline_add_task_24"-->
+<!--        app:tint="@color/white" />-->
 
 </RelativeLayout>

@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Pull tasks</string>
+    <string name="add_task">Add task</string>
+    <string name="title_item_task">Tasks</string>
+    <string name="title_item_statistics">Progress</string>
 </resources>
